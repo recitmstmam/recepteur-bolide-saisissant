@@ -10,8 +10,9 @@ radio.onReceivedNumber(function (receivedNumber) {
 input.onButtonPressed(Button.A, function () {
     radio.sendString("Go")
     basic.pause(100)
+    basic.showIcon(IconNames.No)
+    basic.pause(1000)
     control.reset()
-    basic.showIcon(IconNames.Yes)
 })
 let t2 = 0
 let d2 = 0
@@ -22,4 +23,4 @@ radio.setGroup(1)
 let Fentes = 0
 t1 = 0
 d1 = 0
-basic.showIcon(IconNames.No)
+basic.showIcon(IconNames.Yes)
