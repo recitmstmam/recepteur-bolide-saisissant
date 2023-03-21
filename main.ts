@@ -1,6 +1,6 @@
 radio.onReceivedNumber(function (receivedNumber) {
     t1 = input.runningTimeMicros() / 1000000
-    d1 = receivedNumber / 20 * 157.08 / 1000
+    d1 = receivedNumber / 6 * 9.56 / 1000
     Vitesse = Math.abs(d2 - d1) / Math.abs(t2 - t1)
     serial.writeValue("vi", Vitesse)
     t2 = t1
